@@ -1,24 +1,22 @@
-# vuex-example
+# Como rodar
 
-## Project setup
+## Setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar e rodar
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Para produção
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lint
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
