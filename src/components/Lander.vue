@@ -83,7 +83,7 @@
               </div>
               <div class="card-body" id="covid">
                 <p>
-                  Sistema desenvolvido durante meu periodo de trabalho voluntário na CodaMais+.
+                  Sistema criado durante meu periodo de trabalho voluntário na CodaMais+.
                   <br/>
                   Desenvolvido em Node, PHP e Javascript; além da visão que o usuário comum tem, também existe uma visão
                   de administrador onde as professoras podem fazer o cadastro de novos termos, edição e deleção de dados.
@@ -96,9 +96,9 @@
                 </a>
               </div>
             </div>
-          </div>
-
-                    <div class="col">
+          </div>  
+          <br/>
+          <div class="col">
             <div class="card">
               <div class="card-head">
                 <img
