@@ -25,7 +25,7 @@
         </div>
         <hr class="intro-divider" />
         <ul class="list-inline intro-social-buttons row">
-          <a href="https://github.com/DeoRetr0" target="_blank" class="col"
+          <a href="https://github.com/josuepviana" target="_blank" class="col"
             ><b-icon-github font-scale="2"
           /></a>
           <a href="https://www.linkedin.com/in/josue-viana/" target="_blank" class="col"
@@ -41,7 +41,7 @@
       <p id="sub">Um pouco do que já desenvolvi</p>
       <div class="container">
         <div class="row">
-          <div class="col-md">
+          <div class="col">
             <div class="card">
               <div class="card-head">
                 <img
@@ -54,8 +54,14 @@
               <div class="card-body">
                 <p>
                   Rede social que tem como ideias base uma junção de Facebook e Twitter.
-                  Desenvolvida usando Laravel e PHP em conjunto com um banco de dados MySQL.
+                  <br/>
+                  Desenvolvida usando Laravel e PHP em conjunto com um banco de dados MySQL,
+                  a ideia é transformar a interação entre estudantes e a instituição de ensino mais social e atrativa.
+                  Postagens pela instituição podem ser feitas, topicos relevantes e avisos estão sempre a vista de acordo com
+                  o curso e instituição registrado no perfil do usuário.
                 </p>
+              </div>
+              <div class="card-footer">
                 <a href="http://klass.josueviana.com" target="_blank">
                     <button type="button" class="btn btn-dark btn-lg"><b-icon-laptop/> Visitar Site
                     </button>
@@ -65,7 +71,7 @@
             <br />
           </div>
 
-          <div class="col-md">
+          <div class="col">
             <div class="card">
               <div class="card-head">
                 <img
@@ -75,18 +81,53 @@
                 />
                 <h2>Glossário Terminológico da COVID-19</h2>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="covid">
                 <p>
-                  Sistema desenvolvido durante meu periodo de trabalho voluntário na empresa junior CodaMais+.
+                  Sistema desenvolvido durante meu periodo de trabalho voluntário na CodaMais+.
+                  <br/>
                   Desenvolvido em Node, PHP e Javascript; além da visão que o usuário comum tem, também existe uma visão
                   de administrador onde as professoras podem fazer o cadastro de novos termos, edição e deleção de dados.
                 </p>
-                <a href="http://covid19.lexic.com.br/" target="_blank"> 
+              </div>
+              <div class="card-footer">
+                <a href="https://covid19.lexic.com.br/" target="_blank"> 
                     <button type="button" class="btn btn-lg"><b-icon-laptop/> Visitar Site
                     </button>
                 </a>
               </div>
             </div>
+          </div>
+
+                    <div class="col">
+            <div class="card">
+              <div class="card-head">
+                <img
+                  alt="Vue logo"
+                  class="img-custom"
+                  src="@/assets/vendas.gif"
+                />
+
+                <h2>JV Nostagico - Ecommerce</h2>
+              </div>
+              <div class="card-body">
+                <div class="container" id="vendas">
+                <p>
+                    Um simples site de venda de jogos clássicos.
+                    <br/>
+                    Desenvolvida em Wordpress utilizando alguns plugins como WooCommerce e Elementor,
+                    é um site de vendas funcional que conta com a tela de rastreamento de pedido, comentários sobre o produto
+                    perfil do usuário e as demais já esperadas em sites do tipo.
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="http://vendas.josueviana.com" target="_blank">
+                    <button type="button" class="btn btn-dark btn-lg"><b-icon-laptop/> Visitar Site
+                    </button>
+                </a>
+              </div>
+            </div>
+            <br />
           </div>
         </div>
       </div>
@@ -260,6 +301,19 @@ mark{
     margin: 10px;
 }
 
+.card-body > p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#covid{
+    margin-bottom: 24px;
+}
+
+#vendas{
+  width: 50%;
+}
+
 .btn{
     background-color: #05386b;
     color: #edf5e1;
@@ -275,6 +329,9 @@ mark{
   .intro-social-buttons > a {
   display: inline !important;
   color: white;
+}
+#vendas{
+  width: 100%;
 }
 }
 </style>
