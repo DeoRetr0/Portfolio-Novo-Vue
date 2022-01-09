@@ -382,6 +382,7 @@ mark {
 
   .card img{
     width: 90vw;
+    height: auto;
   }
 }
 </style>
