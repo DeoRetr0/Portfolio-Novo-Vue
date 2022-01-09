@@ -13,6 +13,7 @@ import Footer from './components/includes/footer.vue'
 
 export default {
   name: 'App',
+  
   components: {
     Navigation,
     Footer

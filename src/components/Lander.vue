@@ -12,15 +12,12 @@
           height="200"
           width="200"
         />
-        <h3>
-          Eu gosto de fazer coisas para internet.<br />
-        </h3>
+        <h3>Eu gosto de fazer coisas para internet.<br /></h3>
         <div id="apresentacao" class="container">
           <h4>
-            Atualmente em Brasília, eu aceito participar de projetos remotos
-            ou como freelancer. Meus conhecimentos vão desde HTML + CSS +
-            Javascript até PHP, Vue e REACT com um pouco de MySQL, dentre
-            outros.
+            Atualmente em Brasília, eu aceito participar de projetos remotos ou
+            como freelancer. Meus conhecimentos vão desde HTML + CSS + JS até
+            PHP, Vue e Java com um pouco de MySQL, dentre outros.
           </h4>
         </div>
         <hr class="intro-divider" />
@@ -28,7 +25,10 @@
           <a href="https://github.com/josuepviana" target="_blank" class="col"
             ><b-icon-github font-scale="2"
           /></a>
-          <a href="https://www.linkedin.com/in/josue-viana/" target="_blank" class="col"
+          <a
+            href="https://www.linkedin.com/in/josue-viana/"
+            target="_blank"
+            class="col"
             ><b-icon-linkedin font-scale="2"
           /></a>
         </ul>
@@ -39,13 +39,14 @@
     <section id="projetos" class="portfolio">
       <h1><mark>Projetos</mark></h1>
       <p id="sub">Um pouco do que já desenvolvi</p>
-      <div class="container">
-        <div class="row">
-          <div class="col">
+
+      <tabs>
+        <div class="tab_container">
+          <tab title="PHP">
             <div class="card">
               <div class="card-head">
                 <img
-                  alt="Vue logo"
+                  alt="Gif com fotos do projeto"
                   class="img-custom"
                   src="@/assets/klass.gif"
                 />
@@ -53,29 +54,60 @@
               </div>
               <div class="card-body">
                 <p>
-                  Rede social que tem como ideias base uma junção de Facebook e Twitter.
-                  <br/>
-                  Desenvolvida usando Laravel e PHP em conjunto com um banco de dados MySQL,
-                  a ideia é transformar a interação entre estudantes e a instituição de ensino mais social e atrativa.
-                  Postagens pela instituição podem ser feitas, topicos relevantes e avisos estão sempre a vista de acordo com
-                  o curso e instituição registrado no perfil do usuário.
+                  Rede social que tem como ideias base uma junção de Facebook e
+                  Twitter.
+                  <br />
+                  Tecnologias: Laravel, PHP e Bootstrap
+                  <br />
+                  Banco de dados: MySQL
                 </p>
               </div>
               <div class="card-footer">
                 <a href="http://klass.josueviana.com" target="_blank">
-                    <button type="button" class="btn btn-dark btn-lg"><b-icon-laptop/> Visitar Site
-                    </button>
+                  <button type="button" class="btn btn-dark btn-lg">
+                    <b-icon-laptop /> Visitar Site
+                  </button>
                 </a>
               </div>
             </div>
             <br />
-          </div>
+          </tab>
 
-          <div class="col">
+          <tab title="Java">
             <div class="card">
               <div class="card-head">
                 <img
-                  alt="Vue logo"
+                  alt="Gif com fotos do codigo"
+                  class="img-custom"
+                  src="@/assets/apirest.gif"
+                  width="500px"
+                  height="350px"
+                />
+                <h2>API Rest</h2>
+              </div>
+              <div class="card-body" id="covid">
+                <p>
+                  API Rest - CRUD.
+                  <br />
+                  Tecnologias: Java com Spring Boot
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/josuepviana/RestApi-com-Spring-Boot" target="_blank">
+                  <button type="button" class="btn btn-lg">
+                    <b-icon-laptop /> Ver Projeto
+                  </button>
+                </a>
+              </div>
+            </div>
+            
+          </tab>
+
+          <tab title="HTML5/JavaScript">
+            <div class="card">
+              <div class="card-head">
+                <img
+                  alt="Gif com fotos do projeto"
                   class="img-custom"
                   src="@/assets/glossario.gif"
                 />
@@ -83,54 +115,56 @@
               </div>
               <div class="card-body" id="covid">
                 <p>
-                  Sistema criado durante meu periodo de trabalho voluntário na CodaMais+.
-                  <br/>
-                  Desenvolvido em Node, PHP e Javascript; além da visão que o usuário comum tem, também existe uma visão
-                  de administrador onde as professoras podem fazer o cadastro de novos termos, edição e deleção de dados.
+                  Sistema criado durante meu periodo de trabalho voluntário na
+                  CodaMais+.
+                  <br />
+                  Tecnologias: Node e Materialize
+                  <br />
+                  Banco de dados: MySQL
                 </p>
               </div>
               <div class="card-footer">
-                <a href="https://covid19.lexic.com.br/" target="_blank"> 
-                    <button type="button" class="btn btn-lg"><b-icon-laptop/> Visitar Site
-                    </button>
+                <a href="https://covid19.lexic.com.br/" target="_blank">
+                  <button type="button" class="btn btn-lg">
+                    <b-icon-laptop /> Visitar Site
+                  </button>
                 </a>
               </div>
             </div>
-          </div>  
-          <br/>
-          <div class="col">
+          </tab>
+
+          <tab title="Mobile">
             <div class="card">
               <div class="card-head">
                 <img
-                  alt="Vue logo"
+                  alt="Imagem do codigo do App."
                   class="img-custom"
-                  src="@/assets/vendas.gif"
+                  src="@/assets/app.jpg"
+                  width="500px"
+                  height="350px"
                 />
-
-                <h2>JV Nostagico - Ecommerce</h2>
+                <h2>To Do List</h2>
               </div>
-              <div class="card-body">
-                <div class="container" id="vendas">
+              <div class="card-body" id="covid">
                 <p>
-                    Um simples site de venda de jogos clássicos.
-                    <br/>
-                    Desenvolvida em Wordpress utilizando alguns plugins como WooCommerce e Elementor,
-                    é um site de vendas funcional que conta com a tela de rastreamento de pedido, comentários sobre o produto
-                    perfil do usuário e as demais já esperadas em sites do tipo.
-                  </p>
-                </div>
+                  App desenvolvido durante o Bootcamp Android Developer da Digital Innovation One.
+                  <br />
+                  Tecnologias: Kotlin
+                </p>
               </div>
               <div class="card-footer">
-                <a href="http://vendas.josueviana.com" target="_blank">
-                    <button type="button" class="btn btn-dark btn-lg"><b-icon-laptop/> Visitar Site
-                    </button>
+                <a href="https://github.com/josuepviana/ToDoList" target="_blank">
+                  <button type="button" class="btn btn-lg">
+                    <b-icon-laptop /> Ver Projeto
+                  </button>
                 </a>
               </div>
             </div>
-            <br />
-          </div>
+          </tab>
+
+
         </div>
-      </div>
+      </tabs>
     </section>
 
     <!-- modal curriculo -->
@@ -155,18 +189,20 @@
 
 <script lang="ts">
 import cv from "./Curriculo.vue";
+import Tab from "./Tab.vue";
+import Tabs from "./Tabs.vue";
 
 export default {
   name: "Lander",
   components: {
-    cv
+    cv,
+    Tab,
+    Tabs,
   },
 };
-
 </script>
 
 <style lang="css" scoped>
-
 /* DIVISOR */
 section {
   position: relative;
@@ -238,25 +274,24 @@ section.diagonal {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.intro-social-buttons{
+.intro-social-buttons {
   margin: 40px;
-  
 }
 
 .intro-social-buttons > a {
   display: inline;
   margin: 20px;
   color: white;
-  padding: 20px
+  padding: 20px;
 }
 
 .intro-social-buttons > a:hover {
   color: #5cdb95;
 }
 
-mark{
-    color: #edf5e1;
-    background-color: #05386b;
+mark {
+  color: #edf5e1;
+  background-color: #05386b;
 }
 
 .intro-divider {
@@ -273,50 +308,58 @@ mark{
   /* padding:15% */
 }
 
-.portfolio > h1{
-    color: whitesmoke;
-    font-family: 'theboldfont', sans-serif;
+.portfolio > h1 {
+  color: whitesmoke;
+  font-family: "theboldfont", sans-serif;
 }
 
-.card{
-    width: auto;
-    overflow: hidden;
+.card {
+  width: min-content;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .img-custom {
   margin-top: 15px;
 }
 
-.card-head > h2{
-    margin-top: 15px;
-    margin-bottom: 0px;
-    font-family: 'theboldfont', sans-serif;
+.card-head > h2 {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-family: "theboldfont", sans-serif;
 }
 
-#sub{
-    font-size: 1.5em;
+#sub {
+  font-size: 1.5em;
 }
 
-.card-body > a{
-    margin: 10px;
+.card-body > a {
+  margin: 10px;
 }
 
-.card-body > p{
-    text-align: justify;
-    text-justify: inter-word;
+.card-body > p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-#covid{
-    margin-bottom: 24px;
+#covid {
+  margin-bottom: 24px;
 }
 
-#vendas{
+#vendas {
   width: 50%;
 }
 
-.btn{
-    background-color: #05386b;
-    color: #edf5e1;
+.btn {
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+.tab_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
 }
 
 /* css para mobile */
@@ -327,11 +370,11 @@ mark{
   }
 
   .intro-social-buttons > a {
-  display: inline !important;
-  color: white;
-}
-#vendas{
-  width: 100%;
-}
+    display: inline !important;
+    color: white;
+  }
+  #vendas {
+    width: 100%;
+  }
 }
 </style>
