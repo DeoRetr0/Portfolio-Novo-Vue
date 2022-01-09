@@ -80,8 +80,7 @@
                   alt="Gif com fotos do codigo"
                   class="img-custom"
                   src="@/assets/apirest.gif"
-                  width="500px"
-                  height="350px"
+                  width="fit-content"
                 />
                 <h2>API Rest</h2>
               </div>
@@ -375,6 +374,14 @@ mark {
   }
   #vendas {
     width: 100%;
+  }
+
+  .card{
+    width: 95vw;
+  }
+
+  .card img{
+    width: 90vw;
   }
 }
 </style>
