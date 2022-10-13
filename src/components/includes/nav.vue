@@ -31,7 +31,7 @@
               >Projetos</a
             >
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               href="#curriculo"
               role="button"
@@ -40,7 +40,7 @@
               data-target=".bd-cv-modal-lg"
               >Currículo</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

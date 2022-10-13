@@ -14,7 +14,6 @@ Vue.config.productionTip = false
 
 Vue.use(VueSmoothScroll)
 
-// 必ずVueインスタンス作成前に登録する
 Vue.directive('scroll', {
   inserted: function (el, binding) {
     let f = function (evt) {
@@ -30,11 +29,10 @@ new Vue({
   render: h => h(App),
   router,
   data: {
-    visible: false // 表示・非表示判定を格納
+    visible: false
   },
   methods: {
     handleScroll() {
-      // スクロール値が151以上の場合にvisibleをtrue、そうでない場合にfalseにする
       this.visible = window.pageYOffset > 150;
     }
   }

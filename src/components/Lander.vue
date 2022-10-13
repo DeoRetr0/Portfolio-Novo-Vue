@@ -15,8 +15,7 @@
         <h3>Eu gosto de fazer coisas para internet.<br /></h3>
         <div id="apresentacao" class="container">
           <h4>
-            Atualmente em Brasília, eu aceito participar de projetos remotos ou
-            como freelancer. Meus conhecimentos vão desde HTML + CSS + JS até
+            Atualmente em Brasília. Meus conhecimentos vão desde HTML + CSS + JS até
             PHP, Vue e Java com um pouco de MySQL, dentre outros.
           </h4>
         </div>
@@ -51,6 +50,7 @@
                   src="@/assets/klass.gif"
                 />
                 <h2>Klass - Rede Social</h2>
+                <h3><b>Em Manutenção</b></h3>
               </div>
               <div class="card-body">
                 <p>
@@ -168,7 +168,7 @@
 
     <!-- modal curriculo -->
 
-    <section class="curriculo">
+    <!-- <section class="curriculo">
       <div
         class="modal fade bd-cv-modal-lg"
         tabindex="-1"
@@ -182,19 +182,18 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
 <script lang="ts">
-import cv from "./Curriculo.vue";
+//import cv from "./Curriculo.vue";
 import Tab from "./Tab.vue";
 import Tabs from "./Tabs.vue";
 
 export default {
   name: "Lander",
   components: {
-    cv,
     Tab,
     Tabs,
   },
