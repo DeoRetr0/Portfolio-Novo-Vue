@@ -1,0 +1,8 @@
+.projetoDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projetoDisplay > *{
+    margin: 20px;
+}

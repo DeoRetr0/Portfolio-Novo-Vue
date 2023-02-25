@@ -1,3 +1,6 @@
+<style>
+  @import './css/lander.css';
+</style>
 <template>
   <div>
     <!-- intro -->
@@ -15,8 +18,8 @@
         <h3>Eu gosto de fazer coisas para internet.<br /></h3>
         <div id="apresentacao" class="container">
           <h4>
-            Atualmente em Brasília. Meus conhecimentos vão desde HTML + CSS + JS até
-            PHP, Vue e Java com um pouco de MySQL, dentre outros.
+            Atualmente em Brasília. Meus conhecimentos vão desde a criação de páginas estáticas até
+            PHP, Vue, Java e C# com um pouco de MySQL, dentre outros.
           </h4>
         </div>
         <hr class="intro-divider" />
@@ -73,7 +76,7 @@
             <br />
           </tab>
 
-          <tab title="Java">
+          <tab title="Java" class="projetoDisplay">
             <div class="card">
               <div class="card-head">
                 <img
@@ -99,7 +102,37 @@
                 </a>
               </div>
             </div>
-            
+
+            <div>
+              <div class="card">
+              <div class="card-head">
+                <img
+                  alt="Gif do projeto"
+                  class="img-custom"
+                  src="@/assets/eventoapp.gif"
+                  width="fit-content"
+                />
+                <h2>Gerenciador de Eventos</h2>
+              </div>
+              <div class="card-body" id="covid">
+                <p>
+                  Sistema de gerenciamento de eventos simples para web.
+                  Necessário seguir README para rodar projeto localmente.
+                  <br />
+                  Tecnologias: Java + Spring Boot, Thymeleaf
+                  <br />
+                  Banco de Dados: MySQL
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/josuepviana/GerenciadorEventos" target="_blank">
+                  <button type="button" class="btn btn-lg">
+                    <b-icon-laptop /> Ver Projeto
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
           </tab>
 
           <tab title="HTML5/JavaScript">
@@ -124,6 +157,35 @@
               </div>
               <div class="card-footer">
                 <a href="https://covid19.lexic.com.br/" target="_blank">
+                  <button type="button" class="btn btn-lg">
+                    <b-icon-laptop /> Visitar Site
+                  </button>
+                </a>
+              </div>
+            </div>
+          </tab>
+
+          <tab title="Wordpress">
+            <div class="card">
+              <div class="card-head">
+                <img
+                  alt="Gif com fotos do projeto"
+                  class="img-custom"
+                  src="@/assets/vendas2.gif"
+                />
+                <h2>JV Nostálgico</h2>
+              </div>
+              <div class="card-body" id="covid">
+                <p>
+                  Site de vendas de jogos clássicos criado como exemplo de trabalho com plugins.
+                  <br />
+                  Tecnologias: Wordpress
+                  <br />
+                  Banco de dados: Controlado pelo WooCommerce
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="http://vendas.josueviana.com/" target="_blank">
                   <button type="button" class="btn btn-lg">
                     <b-icon-laptop /> Visitar Site
                   </button>
